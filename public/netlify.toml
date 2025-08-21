@@ -1,0 +1,6 @@
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
+[[plugins]]
+package = "./plugins/netlify-purge-cloudflare-on-deploy"

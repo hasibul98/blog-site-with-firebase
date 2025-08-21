@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+.register-container{
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
+.register-container h2{
+    font-size: 2em;
+    color: #8884d8;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+.register-form{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+
+}
+.form-group{
+    text-align: left;
+}
+.form-group label{
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: bold;
+    font-size: 18px;
+}
+.register-container .form-control{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 1em;
+    color: red;
+}
+.register-container .form-control:focus{
+    border-color: #8884d8;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(136, 132, 216, 0.2);
+
+}
+.register-container .submit-button{
+    padding: 15px 25px;
+    background-color: #82ca9d;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    letter-spacing: 0.5px;
+}
+.register-container .submit-button:hover{
+    background-color: #72b28c;
+    transform: translateY(-2px);
+}
+.register-container .submit-button:disabled{
+    background-color: #cccccc;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.register-container .message{
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.register-container .error{
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+.register-container .success{
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+.register-container .login-link{
+    margin-top: 20px;
+    font-size: 1em;
+}
+.register-container .login-link a{
+    color: #8884d8;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+.register-container .login-link a:hover{
+    color: #7a76c8;
+    text-decoration: underline;
+}
+@media(max-width: 768px){
+    .register-container{
+        margin: 30px 20px;
+        padding: 20px;
+    }
+    .register-container h2{
+        font-size: 1.8em;
+    }
+    .register-container .submit-button{
+        padding: 12px 20px;
+        font-size: 1em;
+    }
+}

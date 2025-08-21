@@ -1,0 +1,89 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 15px 50px;
+    background: linear-gradient(90deg, #8884d8 0%, #82ca9d 100%);
+    color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    font-family: "Roboto", sans-serif;
+    position: sticky;
+    top: 0;
+    z-index: 10000;
+}
+.navbar .navbar__left a{
+    text-decoration: none;
+    color: white;
+}
+.navbar .navbar__left h1{
+    font-size: 1.8em;
+    font-weight: 700;
+    margin:  0;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+.navbar .navbar__right{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.navbar .nav-link{
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+.navbar .nav-link:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+.navbar .user-avatar{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 8px;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+.navbar .logout-button{
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+.navbar .logout-button:hover{
+    background-color: #d32f2f;
+    transform: translateY(-2px);
+}
+@media (max-width: 768px){
+    .navbar{
+        flex-direction: column;
+        padding: 15px 20px;
+        gap: 15px;
+    }
+    .navbar .navbar__right{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    .navbar .nav-link{
+        padding: 6px 12px;
+        font-size: 0.95em;
+
+    }
+    .navbar .navbar__left h1{
+        font-size: 1.5em;
+    }
+    .navbar .logout-button{
+        padding: 8px 15px;
+        font-size: 0.9em;
+    }
+}
